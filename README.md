@@ -2,9 +2,16 @@
 
 ### Q1. Given the following sample screen, create a simple responsive mock up of this imageusing html and css
 
+The given example:
+![example](example.png)
+
+The mockup:
+![mockup](mockup.png)
+
 Getting Started
 - Clone the repo
 - Open `index.html` file on the browser
+
 
 
 ### Q6. Identify any possible shortcomings or limitations of both your functions if any.
