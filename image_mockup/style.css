@@ -1,0 +1,32 @@
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+}
+
+.left {
+  left: 0;
+  background-color:white;
+}
+
+.right {
+  right: 0;
+  background-color: #F8F8F8;
+}
+
+#left-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#right-box {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
