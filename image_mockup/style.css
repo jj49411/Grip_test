@@ -1,3 +1,17 @@
+@font-face {
+  src: url(fonts/ekmukta-bold.ttf);
+  font-family: Ekbold;
+}
+
+@font-face {
+  src: url(fonts/ekmukta-light.ttf);
+  font-family: Eklight;
+}
+
+* {
+  font-family: Eklight;
+}
+
 .split {
   height: 100%;
   width: 50%;
@@ -19,7 +33,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 #right-box {
@@ -29,4 +42,58 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+#logo {
+  width: 290px;
+}
+
+#login-content {
+  color:#989898;
+  text-align: left;
+  font-size: 15px;
+}
+
+#login-button {
+  background-color: #f57c00; 
+  border: none;
+  color: white;
+  border-radius: 4px;
+  display: flex;
+}
+
+.alignleft {
+  padding: 0px 200px 0px 5px;
+}
+
+.alignright {
+  padding: 0px 5px 0px 50px;
+}
+
+#laptop {
+  width: 450px;
+}
+
+#purpose-title {
+  color: #404040;
+  font-family: Ekbold;
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+#purpose-content {
+  color: #606060;
+  margin: 30px;
+  font-size: 15px;
+}
+
+.footer {
+  position: fixed;
+  right: 8px;
+  bottom: 5px;
+  width: 100%;
+  background-color: transparent;
+  color:#404040;
+  text-align: right;
+  font-size: 15px;
 }
