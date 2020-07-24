@@ -1,5 +1,38 @@
 // 2. How would you sanitize user input before further processing?
 
+// Use input validation before users submit the form - libraries like Validator or Yup to prevent invalid input
+// Or we can specify the limitation/input type  of each input in database
+
+import validator from 'validator'
+
+var data = {
+  name: "Julie",
+  email: "julie@example.com"
+}
+
+function checkIfValid(data) {
+  if(validator.isEmpty(data.name)) {
+    console.log("Please enter a name")
+  }
+  if(validator.isEmail(data.email)) {
+    console.log("Email form incorrect")
+  }
+}
+
+
+// Sanitise HTML strings
+function sanitiseHTML(input) {
+  var element = document.createElement('div')
+  element.innerText = input
+  return element.innerHTML
+}
+
+// Sanitise HTML using DOMPurify to remove any other HTML attributes
+import DOMPurify from 'dompurify'
+
+function sanitiseDOM(input) {
+  return DOMPurify.sanitize(input)
+}
 
 
 // 3. Write a javascript function that takes in records (an array of all the database records), an action, and a start_time and end_time time window and returns all user ids that performed that action within that time window.
@@ -49,9 +82,3 @@ console.log(getPlaybackTime(5, records)) // return 'No users found'
 
 // 5. Write inline comments for your functions where appropriate.
 
-
-// 6. Identify any possible shortcomings or limitations of both your functions if any.
-
-
-
-// edge cases: Both will return undefined if the array is empty.
