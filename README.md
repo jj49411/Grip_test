@@ -8,12 +8,15 @@ The given example:
 The mockup:
 ![mockup](mockup.png)
 
+Find out the code [here](image_mockup)
+
 Getting Started:
 - Clone the repo
 - Open `image_mockup/index.html` file on the browser
 
 
 ### Q2 - Q5 The answers can be found in `answer.js` file.
+Find out [here](answer.js)
 
 ### Q6. Identify any possible shortcomings or limitations of both your functions if any.
 
